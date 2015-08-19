@@ -5,8 +5,7 @@ puts "Choose either Rock, Paper, or Scissors."
 puts "The computer will also randomly choose."
 puts "Rock beats Scissors, Scissors beats Paper, and Paper beats Rock."
 #-prompt the user to make their choice
-##repeat = "y"
-##begin
+begin
 
 puts "Please type 'Rock', 'Paper', or 'Scissors':"
 #-Get the user's choice
@@ -70,9 +69,10 @@ end
 #-output the results to the user
 puts "#{whowon}"
 #keep track of score here
-##puts "Do you want to keep playing?"
-##print " hit y to play again, q to quit:"
-##end while repeat == "y"
+puts "Do you want to keep playing?"
+print " hit y to play again, q to quit:"
+repeat = gets.strip
+end while repeat == "y"
 #keepplaying=gets.strip
 
 #Bonuses:
